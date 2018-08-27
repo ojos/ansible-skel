@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: no
+  vars:
+  roles:
+    - os
+  tasks:
+
+- import_playbook: "./deploy.yml"

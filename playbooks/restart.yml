@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: no
+  vars:
+  tasks:
+    - name: Restart service.
+      shell: '/var/www/app/bootstrap/bootstrap.sh'
+      become: yes
